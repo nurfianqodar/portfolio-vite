@@ -1,7 +1,8 @@
 import React from "react";
+import PageContainer from "../baseComponents/PageContainer";
 
 const NotFoundPage: React.FC = () => {
-    return <div>NotFoundPag:React.FCe</div>;
+    return <PageContainer></PageContainer>;
 };
 
 export default NotFoundPage;

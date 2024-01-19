@@ -1,7 +1,8 @@
 import React from "react";
+import PageContainer from "../baseComponents/PageContainer";
 
 const SkillPage: React.FC = () => {
-    return <div>SkillPage</div>;
+    return <PageContainer></PageContainer>;
 };
 
 export default SkillPage;

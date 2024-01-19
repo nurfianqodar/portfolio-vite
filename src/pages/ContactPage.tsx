@@ -1,7 +1,8 @@
 import React from "react";
+import PageContainer from "../baseComponents/PageContainer";
 
 const ContactPage: React.FC = () => {
-    return <div>ContactPage</div>;
+    return <PageContainer></PageContainer>;
 };
 
 export default ContactPage;
