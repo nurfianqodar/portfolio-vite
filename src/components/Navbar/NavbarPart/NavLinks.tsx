@@ -25,13 +25,13 @@ const NavLinks: React.FC<{ isOpen: boolean }> = (props) => {
                             x: 0,
                         }}
                         exit={{
-                            opacity: 0,
+                            x: 400,
                             transition: {
                                 delay: (linkData.length + 2) / 10,
                             },
                         }}
                         // Classname
-                        className="absolute py-5 bg-transparent backdrop-blur-3xl w-full right-0 top-full gap-y-1 lg:hidden"
+                        className="absolute py-5 bg-light  -right-5 top-full gap-y-1 dark:bg-slate-900 lg:hidden"
                     >
                         {/* Unorderes list */}
                         <ul className="flex flex-col items-center">
