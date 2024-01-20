@@ -31,7 +31,7 @@ const NavLinks: React.FC<{ isOpen: boolean }> = (props) => {
                             },
                         }}
                         // Classname
-                        className="absolute py-5 bg-light/90 backdrop-blur-md w-full right-0 top-full gap-y-1 lg:hidden"
+                        className="absolute py-5 bg-transparent backdrop-blur-3xl w-full right-0 top-full gap-y-1 lg:hidden"
                     >
                         {/* Unorderes list */}
                         <ul className="flex flex-col items-center">
@@ -60,15 +60,15 @@ const NavLinks: React.FC<{ isOpen: boolean }> = (props) => {
                                         // Classname
                                         className={`${
                                             location.pathname === data.href
-                                                ? "bg-primary text-light font-semibold"
-                                                : "group  text-dark"
+                                                ? "bg-primary text-light font-semibold dark:text-dark"
+                                                : "group  text-dark dark:text-light"
                                         }  rounded-full my-1`}
                                     >
                                         {/* Anchor */}
                                         <a
                                             // Onclick function
                                             onClick={() => navigate(data.href)}
-                                            className={`text-base text-dark py-2 mx-8 flex items-center cursor-pointer group-hover:text-primary`}
+                                            className={`text-base py-2 mx-8 flex items-center cursor-pointer group-hover:text-primary`}
                                         >
                                             <data.icon className="" />{" "}
                                             <span>{data.name}</span>
@@ -99,13 +99,13 @@ const NavLinks: React.FC<{ isOpen: boolean }> = (props) => {
                                 }}
                                 className={`${
                                     location.pathname === data.href
-                                        ? "bg-primary text-light font-semibold"
-                                        : "group  text-dark"
+                                        ? "bg-primary text-light font-semibold dark:text-dark"
+                                        : "group  text-dark dark:text-light"
                                 }  rounded-full my-1`}
                             >
                                 <a
                                     onClick={() => navigate(data.href)}
-                                    className={`text-base text-dark py-2 gap-x-1 px-3 flex items-center cursor-pointer group-hover:text-primary`}
+                                    className={`text-base  py-2 gap-x-1 px-3 flex items-center cursor-pointer group-hover:text-primary`}
                                 >
                                     <data.icon className="" />{" "}
                                     <span>{data.name}</span>
