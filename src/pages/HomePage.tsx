@@ -11,33 +11,38 @@ const HomePage: React.FC = () => {
     return (
         <PageContainer>
             <SectionContainer>
-                <h1 className="text-lg">
+                <h1 className="text-base">
                     Hi! I'm
-                    <span className="text-3xl my-2 font-bold text-primary">
+                    <span className="text-4xl my-2 font-bold text-primary">
                         <Typewriter
                             options={{
                                 autoStart: true,
                                 strings: [
                                     "Nurfian Qodar",
                                     "Web Developer",
-                                    "Agriculture Student",
+                                    "Farmer",
                                 ],
                                 loop: true,
                             }}
                         />
                     </span>
                 </h1>
-                <h2 className="font-light text-sm mb-5">
+                <h2 className="font-light  mb-5">
                     Combining{" "}
                     <span className="font-semibold">sustainable farm</span> with
                     IoT
                 </h2>
                 <HomeSocialMedia />
 
-                <p className="my-5 ">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Tempore consectetur illum quidem accusamus sunt totam itaque
-                    recusandae officiis animi quod veritatis
+                <p className="my-6 text-xl font-light">
+                    <strong className="mb-5 font-bold">
+                        <span className="text-teal-500">Agriculture</span>{" "}
+                        Enthusiast and{" "}
+                        <span className="text-primary">Coding</span> Aficionao |
+                    </strong>{" "}
+                    Cultivating creativity in fields and code. Explore my
+                    portfolio, a fusion of love for farming and passion for
+                    programming.
                 </p>
                 <div className="flex gap-8">
                     <Link
