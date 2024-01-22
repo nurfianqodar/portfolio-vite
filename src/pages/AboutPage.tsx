@@ -1,12 +1,11 @@
 import React from "react";
-import PageContainer from "../baseComponents/PageContainer";
 import SectionContainer from "../baseComponents/SectionContainer";
 import { GrInstagram } from "react-icons/gr";
 import AboutBiodata from "../components/AboutBiodata";
 
 const AboutPage: React.FC = () => {
     return (
-        <PageContainer>
+        <>
             <SectionContainer>
                 <h1 className="text-xl font-bold mb-3">Hello There!!!</h1>
                 <p className="my-4">
@@ -29,7 +28,7 @@ const AboutPage: React.FC = () => {
                 <h1 className="text-center font-bold text-xl">My Biodata</h1>
                 <AboutBiodata />
             </SectionContainer>
-        </PageContainer>
+        </>
     );
 };
 

@@ -7,6 +7,7 @@ import AboutPage from "../pages/AboutPage";
 import SkillPage from "../pages/SkillPage";
 import GalleryPage from "../pages/GalleryPage";
 import ContactPage from "../pages/ContactPage";
+import PageContainer from "../baseComponents/PageContainer";
 interface routeData {
     path: string;
     element: React.FC;
@@ -22,7 +23,7 @@ const urlPatterns: routeData[] = [
 
     // Home page
     {
-        path: "/",
+        path: "",
         element: HomePage,
     },
 
@@ -56,15 +57,17 @@ const AppRouter: React.FC = () => {
     return (
         <Router>
             <Routes>
-                {urlPatterns.map((data, index) => {
-                    return (
-                        <Route
-                            key={index}
-                            path={data.path}
-                            element={<data.element />}
-                        />
-                    );
-                })}
+                <Route path="/" element={<PageContainer />}>
+                    {urlPatterns.map((data, index) => {
+                        return (
+                            <Route
+                                key={index}
+                                path={data.path}
+                                element={<data.element />}
+                            />
+                        );
+                    })}
+                </Route>
             </Routes>
         </Router>
     );

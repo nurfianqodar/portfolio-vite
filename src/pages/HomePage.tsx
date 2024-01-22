@@ -1,5 +1,4 @@
 import React from "react";
-import PageContainer from "../baseComponents/PageContainer";
 import SectionContainer from "../baseComponents/SectionContainer";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
@@ -9,7 +8,7 @@ import heroImage from "../assets/images/undraw_developer_activity_re_39tg(1).svg
 
 const HomePage: React.FC = () => {
     return (
-        <PageContainer>
+        <>
             <SectionContainer>
                 <h1 className="text-base">
                     Hi! I'm
@@ -80,7 +79,7 @@ const HomePage: React.FC = () => {
                     </h1>
                 </div>
             </SectionContainer>
-        </PageContainer>
+        </>
     );
 };
 
