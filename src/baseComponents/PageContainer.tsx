@@ -8,7 +8,7 @@ const PageContainer: React.FC = () => {
     return (
         <>
             <Navbar />
-            <main className="py-20 flex items-center justify-center">
+            <main className="flex items-center justify-center min-h-[100vh] py-16">
                 <div className="container flex flex-wrap">
                     {/* React Router Dom Element */}
                     <Outlet />
