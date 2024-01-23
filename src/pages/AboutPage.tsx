@@ -1,9 +1,9 @@
 import React from "react";
 import SectionContainer from "../baseComponents/SectionContainer";
-import { GrInstagram } from "react-icons/gr";
 import AboutBiodata from "../components/AboutBiodata";
 import { Link } from "react-router-dom";
 import { CgCode } from "react-icons/cg";
+import InstagramButton from "../components/InstagramButton";
 
 const AboutPage: React.FC = () => {
     return (
@@ -22,15 +22,7 @@ const AboutPage: React.FC = () => {
                     </span>
                     Join me on this dynamic journey of growth and code.
                 </p>
-                <a className=" my-10 flex items-center relative w-fit rounded-full z-10 group mx-auto cursor-pointer">
-                    <span className="absolute bg-pink-400 rounded-full -z-10 scale-0 group-hover:scale-100 transition duration-300 left-full p-5 self-start dark:text-dark text-center ">
-                        Follow My Instagram
-                    </span>
-
-                    <span className="text-4xl hover:text-pink-600">
-                        <GrInstagram />
-                    </span>
-                </a>
+                <InstagramButton />
             </SectionContainer>
             <SectionContainer>
                 <h1 className="text-center font-bold text-4xl text-primary">
