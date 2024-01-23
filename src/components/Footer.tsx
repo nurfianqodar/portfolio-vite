@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                 onClick={() => handleDarkMode()}
                 className={`${
                     dark ? "bg-light text-dark" : "bg-dark text-light"
-                } text-2xl  p-1 rounded-full fixed bottom-5 right-5 `}
+                } text-3xl  p-2 rounded-full fixed bottom-5 right-5 `}
             >
                 {dark ? <MdLightMode /> : <MdDarkMode />}
             </motion.button>
