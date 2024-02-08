@@ -1,9 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const NavbarLinkItem: React.FC<{
-  key?: number;
   href: string;
   name: string;
   icon: React.FC<{ className: string }>;
@@ -11,19 +9,8 @@ const NavbarLinkItem: React.FC<{
   const navigate = useNavigate();
   const location = useLocation();
   return (
-    <motion.li
+    <div
       // Framer motion config
-      key={props.key}
-      initial={{
-        x: 400,
-      }}
-      animate={{
-        x: 0,
-      }}
-      exit={{
-        opacity: 0,
-        x: 400,
-      }}
       // Classname
       className={`${
         location.pathname === props.href
@@ -39,7 +26,7 @@ const NavbarLinkItem: React.FC<{
       >
         <props.icon className="" /> <span>{props.name}</span>
       </a>
-    </motion.li>
+    </div>
   );
 };
 
