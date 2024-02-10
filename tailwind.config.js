@@ -19,6 +19,8 @@ const colors = {
   tailwind: "#06B6D4",
   typescript: "#3178C6",
   vite: "#646CFF",
+  pandas: "#150458",
+  scipy: "#8CAAE6",
 };
 
 export default {
