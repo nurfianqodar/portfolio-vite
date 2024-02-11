@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 import HomeSocialMedia from "../components/HomeSocialMedia";
 import heroImage from "../assets/images/undraw_developer_activity_re_39tg(1).svg";
 import AboutPage from "./AboutPage";
+import AnimateDivContainer from "../baseComponents/AnimateDivContainer";
 
 const HomePage: React.FC = () => {
   return (
-    <>
+    <AnimateDivContainer>
       <SectionContainer>
         <h1 className="text-base">
           Hi! I'm
@@ -71,7 +72,7 @@ const HomePage: React.FC = () => {
 
       {/* About page */}
       <AboutPage />
-    </>
+    </AnimateDivContainer>
   );
 };
 

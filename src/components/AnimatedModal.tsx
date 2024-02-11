@@ -73,11 +73,11 @@ const AnimatedModal: React.FC<{ datas: dataIcons[] }> = (props) => {
             layoutId={selectedId}
             className="h-full w-full top-0 py-20 px-5 fixed z-[999] flex items-center justify-center backdrop-blur-xl"
           >
-            <div className=" bg-white shadow-xl h-full  py-7 px-4 max-w-5xl rounded-2xl dark:bg-slate-800 relative">
+            <div className=" bg-white shadow-xl h-full mt-16 py-10 px-4 max-w-5xl rounded-2xl dark:bg-slate-800 relative">
               {/* Close button */}
               <motion.button
                 onClick={() => setSelectedId(null)}
-                className="text-2xl text-light p-1 m-3 rounded-full bg-red-500 absolute top-0 left-0 dark:text-dark"
+                className="text-2xl text-light p-1 m-3 rounded-full bg-red-500 absolute -top-3 -left-3 dark:text-dark"
               >
                 <BiX />
               </motion.button>
