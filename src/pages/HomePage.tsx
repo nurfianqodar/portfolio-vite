@@ -37,12 +37,11 @@ const HomePage: React.FC = () => {
           fusion of love for farming and passion for programming.
         </p>
         <div className="flex gap-8">
-          <button className="flex item-center py-2 px-3 rounded-full justify-center bg-primary text-light dark:text-dark">
-            About Me
-          </button>
           <Link
+            aria-label="Contact me for more information or just make friendship"
             className="flex item-center py-2 px-3 rounded-full justify-center border border-primary"
             to={"/contact"}
+            title="Contact me"
           >
             Let's connect
           </Link>

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import React from "react";
 import HomePage from "../pages/HomePage";
@@ -28,19 +28,19 @@ const urlPatterns: routeData[] = [
 
   // Skill Page
   {
-    path: "/skill",
+    path: "skill",
     element: SkillPage,
   },
 
   // Gallery Page
   {
-    path: "/gallery",
+    path: "gallery",
     element: GalleryPage,
   },
 
   // Contact Page
   {
-    path: "/contact",
+    path: "contact",
     element: ContactPage,
   },
 ];
